@@ -1,0 +1,8 @@
+{
+  "name": "shang",
+  "app_id": "78e8c76e",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
