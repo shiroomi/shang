@@ -1,3 +1,40 @@
 page-gatepassdetail {
+  .label {
+    margin-right: 0;
+  }
 
+  .no-height {
+    height: 0 !important;
+    line-height: 0 !important;
+  }
+
+  .listtitle {
+    color: $danger;
+    font-size: 0.8em;
+    text-transform: uppercase;
+  }
+
+  .item-divider {
+    background: $primary;
+    color: $light;
+    height: 16px;
+
+    .listtitle {
+      color: $light;
+
+    }
+  }
+
+  .itemfooter {
+    line-height: 18px;
+    height: 20px;
+    font-size: 10px !important;
+    text-transform: uppercase;
+    margin: 0px;
+    padding:3px 10px;
+    background: $secondary;
+    text-align: right;
+  }
+  .Approved{ background: #c2f4b2;}
+  .Declined {background: #c17878; color: $light;}
 }

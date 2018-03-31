@@ -1,69 +1,262 @@
 {
-  "gatepass": [{
+  "gatepass": [
+    {
+      "id": "1",
       "status": "Approved",
       "date": "03-27-2018",
-      "location": "Tower 1 Salcedo Place",
-      "id": "1",
-      "bearername": "Mr. Manuel Lopina",
+      "company": "Salcedo Place",
+      "tower": "Tower 1" ,
+      "bearer":[{
+        "firstname": "Manuel",
+        "lastname": "Lopina",
+        "middlename": "Elizabeth",
+        "mobile": "1234567890"
+        }],
       "docID": "NTL0014",
       "unit": "2013A",
-      "bearernno": "1234567890",
-      "type": "move in"
+
+      "type": "Move in",
+      "file":[
+        {
+            "name" :"image1",
+            "file" :""
+        },
+        {
+            "name" :"image2 ",
+            "file" :""
+        }
+      ],
+      "item":[
+        {
+            "id" :"1",
+            "quatity": "3",
+            "unit":"",
+            "description":"lorem",
+            "remarks":"this is a test date"
+        },
+        {
+            "id" :"2",
+            "quatity": "3",
+            "unit":"",
+            "description":"lorem",
+            "remarks":"this is a test date"
+        }
+      ]
     },
     {
+      "id": "2",
       "status": "Approved",
       "date": "03-27-2018",
-      "location": "Tower 1 Salcedo Place",
-      "id": "2",
-      "bearername": "Mr. Manuel Lopina",
+      "company": "Salcedo Place",
+      "tower": "Tower 1" ,
+      "bearer":[{
+        "firstname": "Manuel",
+        "lastname": "Lopina",
+        "middlename": "Elizabeth",
+        "mobile": "1234567890"
+        }],
       "docID": "NTL0014",
-      "unit": "2014A",
-      "bearernno": "1234567890",
-      "type": "move in"
+      "unit": "2013A",
+
+      "type": "Move in",
+      "file":[
+        {
+            "name" :"image1",
+            "file" :""
+        },
+        {
+            "name" :"image2 ",
+            "file" :""
+        }
+      ],
+      "item":[
+        {
+            "id" :"1",
+            "quatity": "3",
+            "unit":"",
+            "description":"lorem",
+            "remarks":"this is a test date"
+        },
+        {
+            "id" :"2",
+            "quatity": "3",
+            "unit":"",
+            "description":"lorem",
+            "remarks":"this is a test date"
+        }
+      ]
     },
     {
-      "status": "Pending",
-      "date": "03-27-2018",
-      "location": "Tower 1 Salcedo Place",
       "id": "3",
-      "bearername": "Mr. Manuel Lopina",
+      "status": "Approved",
+      "date": "03-27-2018",
+      "company": "Salcedo Place",
+      "tower": "Tower 1" ,
+      "bearer":[{
+        "firstname": "Manuel",
+        "lastname": "Lopina",
+        "middlename": "Elizabeth",
+        "mobile": "1234567890"
+        }],
       "docID": "NTL0014",
-      "unit": "2015A",
-      "bearernno": "1234567890",
-      "type": "move in"
+      "unit": "2013A",
+
+      "type": "Move in",
+      "file":[
+        {
+            "name" :"image1",
+            "file" :""
+        },
+        {
+            "name" :"image2 ",
+            "file" :""
+        }
+      ],
+      "item":[
+        {
+            "id" :"1",
+            "quatity": "3",
+            "unit":"",
+            "description":"lorem",
+            "remarks":"this is a test date"
+        },
+        {
+            "id" :"2",
+            "quatity": "3",
+            "unit":"",
+            "description":"lorem",
+            "remarks":"this is a test date"
+        }
+      ]
     },
     {
-      "status": "Pending",
-      "date": "03-27-2018",
-      "location": "Tower 1 Salcedo Place",
       "id": "4",
-      "bearername": "Mr. Manuel Lopina",
+      "status": "Approved",
+      "date": "03-27-2018",
+      "company": "Salcedo Place",
+      "tower": "Tower 1" ,
+      "bearer":[{
+        "firstname": "Manuel",
+        "lastname": "Lopina",
+        "middlename": "Elizabeth",
+        "mobile": "1234567890"
+        }],
       "docID": "NTL0014",
-      "unit": "2016A",
-      "bearernno": "1234567890",
-      "type": "move in"
+      "unit": "2013A",
+
+      "type": "Move in",
+      "file":[
+        {
+            "name" :"image1",
+            "file" :""
+        },
+        {
+            "name" :"image2 ",
+            "file" :""
+        }
+      ],
+      "item":[
+        {
+            "id" :"1",
+            "quatity": "3",
+            "unit":"",
+            "description":"lorem",
+            "remarks":"this is a test date"
+        },
+        {
+            "id" :"2",
+            "quatity": "3",
+            "unit":"",
+            "description":"lorem",
+            "remarks":"this is a test date"
+        }
+      ]
     },
     {
-      "status": "Declined",
-      "date": "03-27-2018",
-      "location": "Tower 1 Salcedo Place",
       "id": "5",
-      "bearername": "Mr. Manuel Lopina",
+      "status": "Approved",
+      "date": "03-27-2018",
+      "company": "Salcedo Place",
+      "tower": "Tower 1" ,
+      "bearer":[{
+        "firstname": "Manuel",
+        "lastname": "Lopina",
+        "middlename": "Elizabeth",
+        "mobile": "1234567890"
+        }],
       "docID": "NTL0014",
-      "unit": "2017A",
-      "bearernno": "1234567890",
-      "type": "move in"
+      "unit": "2013A",
+
+      "type": "Move in",
+      "file":[
+        {
+            "name" :"image1",
+            "file" :""
+        },
+        {
+            "name" :"image2 ",
+            "file" :""
+        }
+      ],
+      "item":[
+        {
+            "id" :"1",
+            "quatity": "3",
+            "unit":"",
+            "description":"lorem",
+            "remarks":"this is a test date"
+        },
+        {
+            "id" :"2",
+            "quatity": "3",
+            "unit":"",
+            "description":"lorem",
+            "remarks":"this is a test date"
+        }
+      ]
     },
     {
-      "status": "Declined",
-      "date": "03-27-2018",
-      "location": "Tower 1 Salcedo Place",
       "id": "6",
-      "bearername": "Mr. Manuel Lopina",
+      "status": "Approved",
+      "date": "03-27-2018",
+      "company": "Salcedo Place",
+      "tower": "Tower 1" ,
+      "bearer":[{
+        "firstname": "Manuel",
+        "lastname": "Lopina",
+        "middlename": "Elizabeth",
+        "mobile": "1234567890"
+        }],
       "docID": "NTL0014",
-      "unit": "2018A",
-      "bearernno": "1234567890",
-      "type": "move in"
+      "unit": "2013A",
+
+      "type": "Move in",
+      "file":[
+        {
+            "name" :"image1",
+            "file" :""
+        },
+        {
+            "name" :"image2 ",
+            "file" :""
+        }
+      ],
+      "item":[
+        {
+            "id" :"1",
+            "quatity": "3",
+            "unit":"2017A",
+            "description":"lorem",
+            "remarks":"this is a test date"
+        },
+        {
+            "id" :"2",
+            "quatity": "3",
+            "unit":"",
+            "description":"lorem",
+            "remarks":"this is a test date"
+        }
+      ]
     }
   ]
 }

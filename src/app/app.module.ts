@@ -17,7 +17,7 @@ import { VisitorLogPage } from '../pages/visitorlog/visitorlog';
 import { RequestProvider } from '../providers/request/request';
 import { ParkingPage } from '../pages/parking/parking';
 import { MemberledgerPage } from '../pages/memberledger/memberledger';
-import { GatepassPage } from '../pages/gatepass/gatepass';
+import { GatepassPage, GatepassContent } from '../pages/gatepass/gatepass';
 import { AccesscardPage } from '../pages/accesscard/accesscard';
 import { DesignfitoutPage } from '../pages/designfitout/designfitout';
 import { LeaveabsencePage } from '../pages/leaveabsence/leaveabsence';
@@ -26,6 +26,7 @@ import { VehiclestickerPage } from '../pages/vehiclesticker/vehiclesticker';
 import { ViolationPage } from '../pages/violation/violation';
 import { WorkpermitPage } from '../pages/workpermit/workpermit';
 import { GatepassdetailPage } from '../pages/gatepassdetail/gatepassdetail';
+import { PipesModule } from '../pipes/pipes.module';
 @NgModule({
   declarations: [
     MyApp,
@@ -45,12 +46,14 @@ import { GatepassdetailPage } from '../pages/gatepassdetail/gatepassdetail';
     VehiclestickerPage,
     ViolationPage,
     WorkpermitPage,
-    GatepassdetailPage
+    GatepassdetailPage,
+    GatepassContent
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpModule
+    HttpModule,
+    PipesModule
 
   ],
   bootstrap: [IonicApp],
@@ -72,7 +75,8 @@ import { GatepassdetailPage } from '../pages/gatepassdetail/gatepassdetail';
     VehiclestickerPage,
     ViolationPage,
     WorkpermitPage,
-    GatepassdetailPage
+    GatepassdetailPage,
+    GatepassContent
   ],
   providers: [
     StatusBar,

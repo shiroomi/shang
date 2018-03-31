@@ -40,7 +40,13 @@ export class RequestProvider {
 
         }
 
-
+        // filterItems(data,id){
+        //
+        //         return this.items.filter((data) => {
+        //             return item.id.toLowerCase().indexOf(id.toLowerCase()) > -1;
+        //         });
+        //
+        //     }
 
 
 

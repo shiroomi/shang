@@ -21,13 +21,61 @@
   <ion-toolbar color="primary">
     <ion-title>Gatepass</ion-title>
     <ion-buttons end>
-    <button ion-button (click)="closeModal()">Close</button>
+      <button ion-button (click)="closeModal()">Close</button>
     </ion-buttons>
   </ion-toolbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content no-padding>
+  <ion-card no-padding>
+    <ion-item-divider>
+      <div item-left no-padding>
+        <h5><span class="listtitle"> </span>{{data.docID}}</h5></div>
+      <div item-right no-padding>
+        <h5><span class="listtitle">Date : </span>{{data.date}}</h5></div>
+    </ion-item-divider>
+    <ion-item>
+      <div item-left no-padding>
+        <span *ngFor="let b of data.bearer">
+              <ion-label stacked class="listtitle">Bearer :</ion-label>
+              <h5>  {{b.firstname}} {{b.middlename}} {{b.lastname}}</h5>
+              <ion-label stacked class="listtitle">Bearer # :</ion-label>
+              <h5>  {{b.mobile}}</h5>
+        </span>
+        <ion-label stacked class="listtitle">Unit:</ion-label>
+        <h5>  {{data.unit}}</h5>
+      </div>
+      <div item-right no-padding>
+        <ion-label stacked class="listtitle">Company :</ion-label>
+        <h5>{{data.company}}</h5>
+        <ion-label stacked class="listtitle">Tower :</ion-label>
+        <h5>  {{data.tower}}</h5>
+        <ion-label stacked class="listtitle">Type :</ion-label>
+        <h5>{{data.type}}</h5>
+      </div>
+    </ion-item>
+
+  </ion-card>
+
+  <ion-card no-padding *ngFor="let c of data.item">
+    <ion-item-divider>
+      <div item-left no-padding>
+        <h5><span class="listtitle">ITEM  </span>{{c.id}}</h5></div>
+      <div item-right no-padding>
+        <h5><span class="listtitle">Unit : </span>{{c.unit}}</h5></div>
+    </ion-item-divider>
+    <ion-item>
+
+      <ion-label stacked class="listtitle">Quantity :</ion-label>
+      <h5> {{c.quantity}}</h5>
+      <ion-label stacked class="listtitle">Description</ion-label>
+      <h5> {{c.description}}</h5>
+      <ion-label stacked class="listtitle">Remarks :</ion-label>
+      <h5>  {{c.remarks}}</h5>
+
+    </ion-item>
+  </ion-card>
 
 </ion-content>
