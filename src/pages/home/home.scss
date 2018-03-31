@@ -1,3 +1,48 @@
 page-home {
+  .card-header {
+    background: $primary;
+    color: $light;
+    padding: 10px;
+    font-size: 13px;
+  }
 
+  .item {
+    font-size: 12px;
+    min-height: 3.4rem;
+
+    &:before {
+     content : "";
+     position: absolute;
+     bottom  : 0px;
+     height  : 1px;
+     left: 2%;
+     width   : 95%;  /* percentage of the element width*/
+     border-bottom: .55px solid $primary;
+     margin-top:1.2em; /*move the border below the text*/
+   }
+   span {font-size: 11px; font-weight: bold; padding-right: 5px;}
+    button{ font-size: 13px;
+      .icon {margin-right: 3px;}
+  }
+  }
+
+  .infobox {
+    max-height: 150px;
+    height: 100px;
+    .label {margin:2px 8px 2px 0;}
+  }
+  #cardupdates{
+.card {background: rgba(255,255,255,0.75) }
+    .scrollbox{
+    max-height: 250px;
+    height: 220px;
+    background: url('../assets/imgs/updatebg.jpg') no-repeat;
+    background-size: cover;
+    .label {margin:2px 8px 2px 0;}
+    .updateItem {width: 80% !important;
+      ion-card-content{ font-size: 13px !important;}
+    }
+
+  }
+}
 }

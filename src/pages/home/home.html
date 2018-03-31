@@ -1,14 +1,117 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+
+  <ion-toolbar color="primary">
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle="left">
+           <ion-icon name="icon-menu"></ion-icon>
+       </button>
+    </ion-buttons>
+    <ion-title>Dashboard</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only menuToggle="right">
+           <ion-icon name="icon-notif"></ion-icon>
+       </button>
+    </ion-buttons>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+
+
+    <ion-card id="cardupdates">
+      <ion-card-header class="card-header">
+        Live Updates
+      </ion-card-header>
+      <ion-card-content text-center no-padding>
+
+        <ion-scroll scrollx="false" scrollY="true" class="scrollbox" no-padding>
+
+          <ion-card class="updateItem">
+
+
+            <ion-card-content>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+            </ion-card-content>
+
+          </ion-card>
+        </ion-scroll>
+
+
+      </ion-card-content>
+    </ion-card>
+
+
+
+
+  <ion-card>
+    <ion-card-header class="card-header">
+      Unit Account Summary
+    </ion-card-header>
+    <ion-card-content text-center no-padding>
+
+
+      <ion-item class="item-header">
+        <ion-row text-center nowrap>
+          <ion-col><span>Bill as of :</span> March 15, 2018</ion-col>
+          <ion-col></ion-col>
+          <ion-col><span>Bill # :</span> 79372</ion-col>
+
+        </ion-row>
+        <ion-row nowrap>
+          <ion-col><span>Amount Due :</span> 1,500.10</ion-col>
+        </ion-row>
+        <ion-row nowrap>
+          <ion-col><span>Due Date :</span> March 15, 2018</ion-col>
+        </ion-row>
+      </ion-item>
+
+      <ion-item>
+        <ion-row text-right nowrap>
+          <ion-col>
+            <button ion-button color="primary">
+              <ion-icon name="icon-information"></ion-icon> Details</button>
+            <button ion-button color="primary">
+                <ion-icon name="icon-wallet"></ion-icon> Pay Now</button>
+          </ion-col>
+
+
+        </ion-row>
+
+      </ion-item>
+
+
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-card-header class="card-header">
+      Unit Information
+    </ion-card-header>
+    <ion-card-content text-center no-padding>
+
+
+      <ion-item no-padding class="item-header">
+        <ion-row text-center nowrap>
+          <ion-col>Project Name</ion-col>
+          <ion-col>Unit #</ion-col>
+          <ion-col>Handover Date</ion-col>
+
+        </ion-row>
+      </ion-item>
+      <ion-scroll scrollx="false" scrollY="true" class="infobox" no-padding>
+
+        <ion-item no-padding *ngFor="let item of infolist">
+          <ion-row text-center nowrap>
+            <ion-col>{{item.name}}</ion-col>
+            <ion-col>{{item.unit}}</ion-col>
+            <ion-col>{{item.date}}</ion-col>
+          </ion-row>
+        </ion-item>
+      </ion-scroll>
+
+
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>

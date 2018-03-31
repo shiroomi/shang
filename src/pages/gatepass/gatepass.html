@@ -1,0 +1,61 @@
+<ion-header>
+
+  <ion-toolbar color="primary">
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle="left">
+           <ion-icon name="icon-menu"></ion-icon>
+       </button>
+    </ion-buttons>
+    <ion-title>Gatepass Request</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only menuToggle="right">
+           <ion-icon name="icon-notif"></ion-icon>
+       </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content no-padding>
+  <div padding>
+    <ion-segment [(ngModel)]="tenant">
+      <ion-segment-button *ngFor="let d of request" value="{{d.title}}">
+        {{d.title}}
+      </ion-segment-button>
+
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="tenant">
+
+    <div *ngFor="let d of request">
+      <ion-list *ngSwitchCase="d.title">
+
+        <ion-card (click)="presentModal()" no-padding *ngFor="let data of datas">
+          <div *ngIf="d.title == data.status">
+            <ion-item-divider>
+              <div item-left no-padding>
+                <h4><span class="listtitle">Unit :</span>{{data.unit}}</h4></div>
+              <div item-right no-padding>
+                <h4><span class="listtitle">Date :</span>{{data.date}}</h4></div>
+            </ion-item-divider>
+            <ion-item>
+
+              <div item-left no-padding>
+                <h4><span class="listtitle">Document No :</span><b>{{data.docID}}</b></h4>
+                <h4><span class="listtitle">Type :</span> {{data.type}}</h4>
+              </div>
+
+              <div item-right no-padding>
+                <h4><span class="listtitle">Bearer :</span>{{data.bearername}}</h4>
+                <h4><span class="listtitle">Bearer # :</span>{{data.bearernno}}</h4>
+              </div>
+
+            </ion-item>
+          </div>
+        </ion-card>
+
+      </ion-list>
+    </div>
+  </div>
+</ion-content>

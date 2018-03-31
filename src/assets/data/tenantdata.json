@@ -1,0 +1,59 @@
+{
+    "approved": [{
+        "status": "Approved",
+        "date": "03-27-2018",
+        "location": "Tower 1 Salcedo Place",
+        "iD": "1",
+        "approver": "Mr. Manuel Lopina",
+        "docID": "NTL0014",
+        "flat": "2015A"
+      },
+      {
+        "status": "Approved",
+        "date": "03-27-2018",
+        "location": "Tower 1 Salcedo Place",
+        "id": "1",
+        "approver": "Mr. Manuel Lopina",
+        "docID": "NTL0014",
+        "flat": "2016A"
+      }
+    ],
+    "pending": [{
+        "status": "Approved",
+        "date": "03-27-2018",
+        "location": "Tower 1 Salcedo Place",
+        "iD": "1",
+        "approver": "Mr. Manuel Lopina",
+        "docID": "NTL0014",
+        "flat": "2013A"
+      },
+      {
+        "status": "Approved",
+        "date": "03-27-2018",
+        "location": "Tower 1 Salcedo Place",
+        "id": "1",
+        "approver": "Mr. Manuel Lopina",
+        "docID": "NTL0014",
+        "flat": "2014A"
+      }
+    ],
+    "declined": [{
+        "status": "Approved",
+        "date": "03-27-2018",
+        "location": "Tower 1 Salcedo Place",
+        "iD": "1",
+        "approver": "Mr. Manuel Lopina",
+        "docID": "NTL0014",
+        "flat": "2017A"
+      },
+      {
+        "status": "Approved",
+        "date": "03-27-2018",
+        "location": "Tower 1 Salcedo Place",
+        "id": "1",
+        "approver": "Mr. Manuel Lopina",
+        "docID": "NTL0014",
+        "flat": "2018A"
+      }
+    ]
+  }

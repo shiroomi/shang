@@ -1,1 +1,177 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu type="overlay" side="left" [content]="content" id="main">
+  <!-- <ion-header color="primary">
+    <ion-toolbar>
+      <ion-title></ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
+  <ion-content color="primary">
+    <ion-grid>
+      <ion-row class="profile-box" no-padding>
+        <ion-col class="profilepicbox" col-3 no-padding>
+          <img src="../assets/imgs/profilepic.jpg">
+        </ion-col>
+        <ion-col padding col-8>
+          <ion-row class="name">Liza Soberano</ion-row>
+          <ion-row class="title">Tenant</ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-list no-lines no-padding>
+      <button menuClose detail-none ion-item color="primary" (click)="openPage(HomePage)">
+        <ion-icon name="icon-dashboard"></ion-icon>Dashboard
+      </button>
+      <button ion-item  color="primary" (click)="nextMenu('profileMenu')">
+        <ion-icon name="icon-website"></ion-icon>Unit & Parking Profile
+        <ion-badge color="danger" item-end>8</ion-badge>
+      </button>
+      <button ion-item color="primary" (click)="nextMenu('regformsMenu')">
+        <ion-icon name="icon-note"></ion-icon>Registrations & Forms
+        <ion-badge color="danger" item-end>8</ion-badge>
+      </button>
+      <button ion-item color="primary" (click)="nextMenu('faqMenu')">
+        <ion-icon name="icon-information"></ion-icon>FAQ & Circulars
+        <ion-badge color="danger"item-end>8</ion-badge>
+      </button>
+      <button ion-item  detail-none color="primary" (click)="openPage('FeedbackPage')">
+        <ion-icon name="icon-feedback"></ion-icon>Feedback & Comments
+      </button>
+      <button ion-item detail-none color="primary" (click)="openPage('BookingPage')">
+        <ion-icon name="icon-note"></ion-icon>Function Room Booking
+      </button>
+      <button ion-item color="primary" (click)="nextMenu('doc')">
+        <ion-icon name="icon-book"></ion-icon>Documents / House Rules
+        <ion-badge color="danger" item-end>8</ion-badge>
+      </button>
+      <button ion-item detail-none color="primary" (click)="openPage('CommunityPage')">
+        <ion-icon name="icon-update"></ion-icon>Community Update
+      </button>
+      <button ion-item detail-none color="primary" (click)="openPage('CommunityGuidePage')">
+        <ion-icon name="icon-operator"></ion-icon>Community Guide
+      </button>
+      <button ion-item detail-none color="primary" (click)="openPage('AccountPage')">
+        <ion-icon name="icon-gear"></ion-icon>AccountSettings
+      </button>
+      <button ion-item detail-none color="primary" (click)="openPage('AboutPage')">
+        <ion-icon name="icon-information"></ion-icon>About Shangrila
+      </button>
+      <button ion-item detail-none color="primary" >
+        <ion-icon name="icon-logout"></ion-icon>Logout
+      </button>
+
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<!-- menu for profile -->
+<ion-menu type="overlay" side="left" [content]="content" id="profileMenu" class="menupanel">
+  <ion-header color="primary">
+    <ion-navbar>
+      <button (click)="backMain(profile)"> <ion-icon name="back"></ion-icon></button>
+      <ion-title>Unit & Parking Profile</ion-title>
+    </ion-navbar>
+</ion-header>
+  <ion-content color="primary">
+    <button menuClose ion-item color="primary" *ngFor="let v of profile;" (click)="openPage(v.component)">
+      <ion-icon [name]="v.icon"></ion-icon>{{v.title}}
+    </button>
+  </ion-content>
+</ion-menu>
+
+<!-- menu for forms -->
+<ion-menu type="overlay" side="left" [content]="content" id="regformsMenu" class="menupanel">
+  <ion-header color="primary">
+    <ion-navbar>
+      <button (click)="backMain(profile)"> <ion-icon name="back"></ion-icon></button>
+      <ion-title>Registration & Forms</ion-title>
+    </ion-navbar>
+</ion-header>
+  <ion-content color="primary">
+    <button ion-item  color="primary" (click)="nextMenu('registerMenu')">
+      <ion-icon name="icon-website"></ion-icon>Registrations
+      <!-- <ion-badge color="danger" item-end>8</ion-badge> -->
+    </button>
+    <button ion-item color="primary" (click)="nextMenu('formsMenu')">
+      <ion-icon name="icon-note"></ion-icon>Forms
+      <!-- <ion-badge color="danger" item-end>8</ion-badge> -->
+    </button>
+  </ion-content>
+</ion-menu>
+
+<!-- menu for regs -->
+<ion-menu type="overlay" side="left" [content]="content" id="registerMenu" class="menupanel">
+  <ion-header color="primary">
+    <ion-navbar>
+      <button (click)="backMain(profile)"> <ion-icon name="back"></ion-icon></button>
+      <ion-title>Registrations</ion-title>
+    </ion-navbar>
+</ion-header>
+  <ion-content color="primary">
+    <button menuClose ion-item color="primary" *ngFor="let v of regs;" (click)="openPage(v.component)">
+      <ion-icon [name]="v.icon"></ion-icon>{{v.title}}
+    </button>
+  </ion-content>
+</ion-menu>
+
+<!-- menu for faq -->
+<ion-menu type="overlay" side="left" [content]="content" id="faqMenu" class="menupanel">
+  <ion-header color="primary">
+    <ion-navbar>
+      <button (click)="backMain(profile)"> <ion-icon name="back"></ion-icon></button>
+      <ion-title>FAQ & Circulars</ion-title>
+    </ion-navbar>
+</ion-header>
+  <ion-content color="primary">
+    <button ion-item color="primary" *ngFor="let v of faq;" (click)="openPage(v.component)">
+      <ion-icon [name]="v.icon"></ion-icon>{{v.title}}
+    </button>
+  </ion-content>
+</ion-menu>
+
+<!-- menu for doc -->
+<ion-menu type="overlay" side="left" [content]="content" id="docsMenu" class="menupanel">
+  <ion-header color="primary">
+    <ion-navbar>
+      <button (click)="backMain(profile)"> <ion-icon name="back"></ion-icon></button>
+      <ion-title>Documents / House Rules</ion-title>
+    </ion-navbar>
+</ion-header>
+  <ion-content color="primary">
+    <button ion-item color="primary" *ngFor="let v of doc;" (click)="openPage(v.component)">
+      <ion-icon [name]="v.icon"></ion-icon>{{v.title}}
+    </button>
+  </ion-content>
+</ion-menu>
+
+<!-- menu for forms -->
+<ion-menu type="overlay" side="left" [content]="content" id="formsMenu" class="menupanel">
+  <ion-header color="primary">
+    <ion-navbar>
+      <button (click)="backMain(profile)"> <ion-icon name="back"></ion-icon></button>
+      <ion-title>Forms</ion-title>
+    </ion-navbar>
+</ion-header>
+  <ion-content color="primary">
+    <button menuClose ion-item color="primary" *ngFor="let v of formlist;" (click)="openPage(v.component)">
+      <ion-icon [name]="v.icon"></ion-icon>{{v.title}}
+    </button>
+  </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+
+
+<ion-menu type="overlay" side="right" [content]="content" id="notificationsMenu">
+  <ion-header color="primary">
+    <ion-toolbar>
+      <ion-title></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content color="primary">
+
+  </ion-content>
+
+</ion-menu>

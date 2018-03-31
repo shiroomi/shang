@@ -1,0 +1,69 @@
+{
+  "gatepass": [{
+      "status": "Approved",
+      "date": "03-27-2018",
+      "location": "Tower 1 Salcedo Place",
+      "id": "1",
+      "bearername": "Mr. Manuel Lopina",
+      "docID": "NTL0014",
+      "unit": "2013A",
+      "bearernno": "1234567890",
+      "type": "move in"
+    },
+    {
+      "status": "Approved",
+      "date": "03-27-2018",
+      "location": "Tower 1 Salcedo Place",
+      "id": "2",
+      "bearername": "Mr. Manuel Lopina",
+      "docID": "NTL0014",
+      "unit": "2014A",
+      "bearernno": "1234567890",
+      "type": "move in"
+    },
+    {
+      "status": "Pending",
+      "date": "03-27-2018",
+      "location": "Tower 1 Salcedo Place",
+      "id": "3",
+      "bearername": "Mr. Manuel Lopina",
+      "docID": "NTL0014",
+      "unit": "2015A",
+      "bearernno": "1234567890",
+      "type": "move in"
+    },
+    {
+      "status": "Pending",
+      "date": "03-27-2018",
+      "location": "Tower 1 Salcedo Place",
+      "id": "4",
+      "bearername": "Mr. Manuel Lopina",
+      "docID": "NTL0014",
+      "unit": "2016A",
+      "bearernno": "1234567890",
+      "type": "move in"
+    },
+    {
+      "status": "Declined",
+      "date": "03-27-2018",
+      "location": "Tower 1 Salcedo Place",
+      "id": "5",
+      "bearername": "Mr. Manuel Lopina",
+      "docID": "NTL0014",
+      "unit": "2017A",
+      "bearernno": "1234567890",
+      "type": "move in"
+    },
+    {
+      "status": "Declined",
+      "date": "03-27-2018",
+      "location": "Tower 1 Salcedo Place",
+      "id": "6",
+      "bearername": "Mr. Manuel Lopina",
+      "docID": "NTL0014",
+      "unit": "2018A",
+      "bearernno": "1234567890",
+      "type": "move in"
+    }
+  ]
+}

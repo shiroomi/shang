@@ -1,0 +1,78 @@
+<ion-header>
+
+  <ion-toolbar color="primary">
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle="left">
+           <ion-icon name="icon-menu"></ion-icon>
+       </button>
+    </ion-buttons>
+    <ion-title>Tenant Registration Request</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only menuToggle="right">
+           <ion-icon name="icon-notif"></ion-icon>
+       </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content no-padding>
+  <div padding>
+    <ion-segment [(ngModel)]="tenant">
+      <ion-segment-button value="pending">
+        Pending
+      </ion-segment-button>
+      <ion-segment-button value="approved">
+        Approved
+      </ion-segment-button>
+      <ion-segment-button value="declined">
+        Declined
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+<div [ngSwitch]="tenant">
+  <ion-list *ngSwitchCase="'approved'">
+    <ion-card (click)="openPage(TenantDetail)" no-padding *ngFor="let data of datas.approved">
+      <ion-item >
+        <h4><span class="listtitle">Date:</span>  {{data.date}}</h4>
+        <h4><span class="listtitle">Flat #:</span> {{data.flat}}</h4>
+        <h4><span class="listtitle">Document No:</span> {{data.docID}}</h4>
+        <h4><span class="listtitle">Location:</span>{{data.location}}</h4>
+        <h4><span class="listtitle">Approver:</span> {{data.approver}}</h4>
+      </ion-item>
+    </ion-card>
+
+
+
+  </ion-list>
+  <ion-list  *ngSwitchDefault>
+    <ion-card (click)="openPage(TenantDetail)" no-padding *ngFor="let data of datas.pending">
+      <ion-item >
+        <h4><span class="listtitle">Date:</span>  {{data.date}}</h4>
+        <h4><span class="listtitle">Flat #:</span> {{data.flat}}</h4>
+        <h4><span class="listtitle">Document No:</span> {{data.docID}}</h4>
+        <h4><span class="listtitle">Location:</span>{{data.location}}</h4>
+        <h4><span class="listtitle">Approver:</span> {{data.approver}}</h4>
+      </ion-item>
+    </ion-card>
+
+
+
+
+
+  </ion-list>
+  <ion-list *ngSwitchCase="'declined'" >
+    <ion-card  (click)="openPage(TenantDetail)" no-padding *ngFor="let data of datas.declined">
+      <ion-item >
+        <h4><span class="listtitle">Date:</span>  {{data.date}}</h4>
+        <h4><span class="listtitle">Flat #:</span> {{data.flat}}</h4>
+        <h4><span class="listtitle">Document No:</span> {{data.docID}}</h4>
+        <h4><span class="listtitle">Location:</span>{{data.location}}</h4>
+        <h4><span class="listtitle">Approver:</span> {{data.approver}}</h4>
+      </ion-item>
+    </ion-card>
+
+
+  </ion-list>
+</div>
+</ion-content>
