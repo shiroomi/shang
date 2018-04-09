@@ -8,7 +8,7 @@
     </ion-buttons>
     <ion-title>Gatepass Request</ion-title>
     <ion-buttons end>
-      <button ion-button icon-only >
+      <button ion-button icon-only (click)="AddGatepass()">
            <ion-icon name="plus" color="light"></ion-icon>
        </button>
     </ion-buttons>
@@ -23,5 +23,5 @@
     <ion-tab [root]="declined" tabTitle="Declined" tabIcon="home"></ion-tab>
   </ion-tabs>
 
-  
+
 </ion-content>

@@ -1,0 +1,93 @@
+<ion-header>
+
+  <ion-toolbar color="primary">
+    <ion-title>Add Gatepass</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="closeModal()">Close</button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+
+
+<ion-content  no-lines class="main-view">
+ 
+  <div class="modal_content">
+<form>
+
+
+    <ion-item>
+      <ion-label color="primary" stacked>Company</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+
+
+
+
+    <ion-row no-padding>
+      <ion-col no-padding col-5>  <ion-item>
+          <ion-label color="primary" stacked>Unit No.</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col col-7  no-padding>
+          <ion-item>
+            <ion-label color="primary" stacked>Tower</ion-label>
+            <ion-input type="password"></ion-input>
+          </ion-item>
+      </ion-col>
+    </ion-row>
+
+
+<ion-item-divider>Bearer Details</ion-item-divider>
+    <ion-row no-padding>
+      <ion-col no-padding col-6>  <ion-item>
+          <ion-label color="primary" stacked>Last Name</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col no-padding col-6>  <ion-item>
+          <ion-label color="primary" stacked>First Name</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row no-padding>
+      <ion-col no-padding col-6>  <ion-item>
+          <ion-label  color="primary" stacked>Middle Name</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col no-padding  col-6>  <ion-item>
+          <ion-label color="primary" stacked>Mobile #</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row no-padding>
+      <ion-col no-padding col-6>  <ion-item>
+          <ion-label  color="primary"stacked>Date</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col  no-padding col-6>  <ion-item>
+          <ion-label  color="primary"stacked>Type</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-item>
+          <ion-label  color="primary"stacked>Attach File</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+
+<button  ion-button small  round  > Add item</button>
+<button  ion-button small round >Submit</button>
+</form>
+</div>
+
+</ion-content>

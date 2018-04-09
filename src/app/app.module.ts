@@ -26,7 +26,11 @@ import { VehiclestickerPage } from '../pages/vehiclesticker/vehiclesticker';
 import { ViolationPage } from '../pages/violation/violation';
 import { WorkpermitPage } from '../pages/workpermit/workpermit';
 import { GatepassdetailPage } from '../pages/gatepassdetail/gatepassdetail';
+import { AddgatepassPage } from '../pages/addgatepass/addgatepass';
+import { AddgatepassitemPage } from '../pages/addgatepassitem/addgatepassitem';
 import { PipesModule } from '../pipes/pipes.module';
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -47,7 +51,9 @@ import { PipesModule } from '../pipes/pipes.module';
     ViolationPage,
     WorkpermitPage,
     GatepassdetailPage,
-    GatepassContent
+    GatepassContent,
+    AddgatepassPage,
+    AddgatepassitemPage
   ],
   imports: [
     BrowserModule,
@@ -76,7 +82,9 @@ import { PipesModule } from '../pipes/pipes.module';
     ViolationPage,
     WorkpermitPage,
     GatepassdetailPage,
-    GatepassContent
+    GatepassContent,
+    AddgatepassPage,
+    AddgatepassitemPage
   ],
   providers: [
     StatusBar,
