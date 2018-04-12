@@ -35,24 +35,24 @@ export class GatepassPage {
 
 @Component({
   selector: 'page-gatepass',
-  template: `<ion-content no-padding><ion-list><ion-card (click)="GetDetails(d)" no-padding *ngFor="let d of data">
-                <ion-item-divider>
-                  <div item-left no-padding><h4><span class="listtitle">Unit :</span>{{d.unit}}</h4></div>
-                  <div item-right no-padding><h4><span class="listtitle">Date :</span>{{d.date}}</h4></div>
-                </ion-item-divider>
-                <ion-item>
-                  <div item-left no-padding>
-                    <h4><span class="listtitle">Document No :</span><b>{{d.docID}}</b></h4>
-                    <h4><span class="listtitle">Type :</span> {{d.type}}</h4>
-                  </div>
-                  <div item-right no-padding *ngFor="let b of d.bearer">
-                    <h4><span class="listtitle">Bearer :</span>{{b.firstname}} {{b.lastname}}</h4>
-                    <h4><span class="listtitle">Bearer # :</span>{{b.mobile}}</h4>
-                  </div>
-                </ion-item>
-            </ion-card>
-          </ion-list>
-          </ion-content>`
+    template: `<ion-content no-padding><ion-list><ion-card (click)="GetDetails(d)" no-padding *ngFor="let d of data">
+                  <ion-item-divider>
+                    <div item-left no-padding><h4><span class="listtitle">Unit :</span>{{d.unit}}</h4></div>
+                    <div item-right no-padding><h4><span class="listtitle">Date :</span>{{d.date}}</h4></div>
+                  </ion-item-divider>
+                  <ion-item>
+                    <div item-left no-padding>
+                      <h4><span class="listtitle">Document No :</span><b>{{d.docID}}</b></h4>
+                      <h4><span class="listtitle">Type :</span> {{d.type}}</h4>
+                    </div>
+                    <div item-right no-padding *ngFor="let b of d.bearer">
+                      <h4><span class="listtitle">Bearer :</span>{{b.firstname}} {{b.lastname}}</h4>
+                      <h4><span class="listtitle">Bearer # :</span>{{b.mobile}}</h4>
+                    </div>
+                  </ion-item>
+              </ion-card>
+            </ion-list>
+            </ion-content>`
 })
 
 export class GatepassContent {

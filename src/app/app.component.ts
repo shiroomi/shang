@@ -15,6 +15,7 @@ import { MemberledgerPage } from '../pages/memberledger/memberledger';
 import { GatepassPage } from '../pages/gatepass/gatepass';
 import { AccesscardPage } from '../pages/accesscard/accesscard';
 import { DesignfitoutPage } from '../pages/designfitout/designfitout';
+import { DesignfitdetailPage } from '../pages/designfitout/designfitdetail';
 import { LeaveabsencePage } from '../pages/leaveabsence/leaveabsence';
 import { MeterreadingPage } from '../pages/meterreading/meterreading';
 import { VehiclestickerPage } from '../pages/vehiclesticker/vehiclesticker';
@@ -27,7 +28,7 @@ import { WorkpermitPage } from '../pages/workpermit/workpermit';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = GatepassPage;
+  rootPage: any = DesignfitoutPage;
 
   pages: Array<{ title: string, component: any, icon: any }>;
   profile: Array<{ title: string, component: any, icon: any }>;

@@ -1,0 +1,68 @@
+{
+  "designfitout": [
+    {
+      "id": "1",
+      "status": "Approved",
+      "date": "03-27-2018",
+      "company": "Salcedo Place",
+      "tower": "Tower 1" ,
+      "contact":[{
+        "firstname": "Manuel",
+        "lastname": "Lopina",
+        "detail":" test contact details"
+        }],
+      "docID": "NTL0014",
+      "unit": "2013A",
+      "remarks":"remarks here",
+      "file":[
+        {
+            "name" :"image1",
+            "file" :"",
+            "id":"1",
+            "title":"Authorization Letter from the Unit Owner"
+
+        },
+        {
+            "name" :"image1",
+            "file" :"",
+            "id":"2",
+            "title":"Detail Scope of Work"
+        },
+        {
+            "name" :"image1",
+            "file" :"",
+            "id":"3",
+            "title":"As Built Plans"
+        },
+        {
+            "name" :"image1",
+            "file" :"",
+            "id":"4",
+            "title":"Gantt Chart / Work Schedule"
+        },
+        {
+            "name" :"image1",
+            "file" :"",
+            "id":"5",
+            "title":"Construction Bond for Major Works"
+        },
+        {
+            "name" :"image1",
+            "file" :"",
+            "type":"6",
+            "title":"Construction Bond for Major Works"
+        },
+        {
+            "name" :"image1",
+            "file" :"",
+            "type":"7",
+            "title":"E-mail Copy of House Rules and Regulations"
+        }
+
+      ]
+
+
+    }
+
+  ]
+}

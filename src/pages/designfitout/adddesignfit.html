@@ -1,0 +1,99 @@
+<ion-header>
+
+  <ion-toolbar color="primary">
+    <ion-title>Add Design & Fit-Out</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="closePage()">Close</button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+<ion-content padding no-lines>
+  <form>
+
+    <ion-item>
+      <ion-label color="primary" stacked>Company</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-row no-padding>
+      <ion-col no-padding col-5>
+        <ion-item>
+          <ion-label color="primary" stacked>Unit No.</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col col-7 no-padding>
+        <ion-item>
+          <ion-label color="primary" stacked>Tower</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row no-padding>
+      <ion-item-divider class="rowdivider"><h5>Contact Details</h5></ion-item-divider>
+      <ion-col no-padding col-6>
+        <ion-item>
+          <ion-label color="primary" stacked>Last Name</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col no-padding col-6>
+        <ion-item>
+          <ion-label color="primary" stacked>First Name</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row no-padding>
+      <ion-col no-padding col-6>
+        <ion-item>
+          <ion-label color="primary" stacked>Date</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col no-padding col-6>
+        <ion-item>
+          <ion-label color="primary" stacked>Type</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row no-padding>
+
+        <ion-item>
+          <ion-label color="primary" stacked>Details</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label color="primary" stacked>Remarks</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+    </ion-row>
+    <ion-row class="rowdivider">
+      <ion-item-divider>
+        <h5>Upload images below</h5>
+      </ion-item-divider>
+      <ion-item no-lines>
+          <button ion-button small full round>Authorization Letter from the Unit Owner</button>
+            <button ion-button small full round>Detail Scope of Work</button>
+              <button ion-button small full round>As Built Plans</button>
+                <button ion-button small full round>Gantt Chart / Work Schedule</button>
+                  <button ion-button small full round>Construction Bond for Major Works</button>
+                    <button ion-button small full round>Construction Bond for Major Works</button>
+                      <button ion-button small full round>E-mail Copy of House Rules and Regulations</button>
+
+      </ion-item>
+    </ion-row>
+
+
+    <button ion-button small  full round >Submit</button>
+  </form>
+
+
+</ion-content>

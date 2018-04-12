@@ -1,0 +1,49 @@
+
+<ion-content no-padding (click)="closeModal">
+  <ion-card no-padding>
+    <ion-item-divider>
+      <div item-left no-padding>
+        <h5><span class="listtitle"> </span>{{data.docID}}</h5></div>
+      <div item-right no-padding>
+        <h5><span class="listtitle">Date : </span>{{data.date}}</h5></div>
+    </ion-item-divider>
+    <ion-item>
+      <div item-left no-padding>
+        <span *ngFor="let b of data.contact">
+              <ion-label stacked class="listtitle">Contact :</ion-label>
+              <h5>  {{b.firstname}} {{b.lastname}}</h5>
+              <ion-label stacked class="listtitle">Contact Detail :</ion-label>
+              <h5>  {{b.detail}} </h5>
+        </span>
+        <ion-label stacked class="listtitle">Unit:</ion-label>
+        <h5>  {{data.unit}}</h5>
+      </div>
+      <div item-right no-padding>
+        <ion-label stacked class="listtitle">Company :</ion-label>
+        <h5>{{data.company}}</h5>
+        <ion-label stacked class="listtitle">Tower :</ion-label>
+        <h5>  {{data.tower}}</h5>
+        <ion-label stacked class="listtitle">Type :</ion-label>
+        <h5>{{data.type}}</h5>
+      </div>
+    </ion-item>
+
+  </ion-card>
+  <ion-card no-padding >
+    <ion-item>
+
+        <h5><span class="listtitle"> </span>{{data.remarks}}</h5>
+
+    </ion-item>
+
+  </ion-card>
+  <ion-card no-padding *ngFor="let c of data.file">
+    <ion-item-divider>
+      <div item-left no-padding>
+        <h5><span class="listtitle"> </span>{{c.title}}</h5></div>
+
+    </ion-item-divider>
+
+  </ion-card>
+ <button ion-button small full class="footer-button" (click)="close()">Close</button>
+</ion-content>

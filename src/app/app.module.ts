@@ -19,7 +19,11 @@ import { ParkingPage } from '../pages/parking/parking';
 import { MemberledgerPage } from '../pages/memberledger/memberledger';
 import { GatepassPage, GatepassContent } from '../pages/gatepass/gatepass';
 import { AccesscardPage } from '../pages/accesscard/accesscard';
+
 import { DesignfitoutPage } from '../pages/designfitout/designfitout';
+import { DesignfitdetailPage } from '../pages/designfitout/designfitdetail';
+import { AdddesignfitPage } from '../pages/designfitout/adddesignfit';
+
 import { LeaveabsencePage } from '../pages/leaveabsence/leaveabsence';
 import { MeterreadingPage } from '../pages/meterreading/meterreading';
 import { VehiclestickerPage } from '../pages/vehiclesticker/vehiclesticker';
@@ -53,7 +57,9 @@ import { PipesModule } from '../pipes/pipes.module';
     GatepassdetailPage,
     GatepassContent,
     AddgatepassPage,
-    AddgatepassitemPage
+    AddgatepassitemPage,
+    DesignfitdetailPage,
+    AdddesignfitPage
   ],
   imports: [
     BrowserModule,
@@ -84,7 +90,9 @@ import { PipesModule } from '../pipes/pipes.module';
     GatepassdetailPage,
     GatepassContent,
     AddgatepassPage,
-    AddgatepassitemPage
+    AddgatepassitemPage,
+    DesignfitdetailPage,
+    AdddesignfitPage
   ],
   providers: [
     StatusBar,
